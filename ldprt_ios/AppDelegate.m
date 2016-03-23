@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LDPRTViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
     UIWindow *window = [[UIWindow alloc] initWithFrame:screenBounds];
 
     // Set the window rootViewController here
+    LDPRTViewController *ldprt_controller = [[LDPRTViewController alloc] init];
+    window.rootViewController = ldprt_controller;
 
     [window makeKeyAndVisible];
     [self setWindow:window];
